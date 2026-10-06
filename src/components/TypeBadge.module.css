@@ -1,0 +1,32 @@
+.badge {
+  display: inline-block;
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+  background: #888;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+/* Type colours, also used by the gallery filter chips and card backgrounds. */
+.normal { background: #a8a77a; }
+.fire { background: #ee8130; }
+.water { background: #6390f0; }
+.electric { background: #e5bf1c; }
+.grass { background: #5fae3c; }
+.ice { background: #67c8c4; }
+.fighting { background: #c22e28; }
+.poison { background: #a33ea1; }
+.ground { background: #c9a84f; }
+.flying { background: #9a85e8; }
+.psychic { background: #f95587; }
+.bug { background: #96a51a; }
+.rock { background: #b6a136; }
+.ghost { background: #735797; }
+.dragon { background: #6f35fc; }
+.dark { background: #705746; }
+.steel { background: #a0a0c0; }
+.fairy { background: #d685ad; }

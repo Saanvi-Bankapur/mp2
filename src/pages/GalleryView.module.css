@@ -1,0 +1,132 @@
+.intro h1 {
+  margin: 0 0 0.25rem;
+}
+
+.intro p {
+  margin: 0 0 1.25rem;
+  color: var(--text-muted);
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.chip {
+  padding: 0.35rem 0.9rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--text);
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: border-color 0.12s, background 0.12s;
+}
+
+.chip:not(.chipActive) {
+  background: var(--surface);
+}
+
+.chip:hover {
+  border-color: var(--brand);
+}
+
+/* Background colour comes from the matching TypeBadge type class. */
+.chipActive {
+  border-color: transparent;
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.clear {
+  padding: 0.35rem 0.9rem;
+  border: none;
+  background: none;
+  color: var(--brand);
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.count {
+  margin: 0 0 0.75rem;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  color: inherit;
+  text-decoration: none;
+  overflow: hidden;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.card:hover,
+.card:focus-visible {
+  box-shadow: var(--shadow);
+  transform: translateY(-3px);
+}
+
+/* The type class sets the background; this lightens it into a soft tint. */
+.imageWrap {
+  position: relative;
+  aspect-ratio: 1;
+  padding: 0.75rem;
+}
+
+.imageWrap::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--surface);
+  opacity: 0.72;
+}
+
+.imageWrap img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.2s;
+}
+
+.card:hover .imageWrap img {
+  transform: scale(1.06);
+}
+
+.caption {
+  display: flex;
+  flex-direction: column;
+  padding: 0.6rem 0.8rem 0.8rem;
+}
+
+.id {
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.name {
+  font-weight: 700;
+}
